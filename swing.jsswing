@@ -1,0 +1,10 @@
+listModel = new DefaultListModel();
+      listModel.addElement("Kevin Durant");
+      listModel.addElement("Kyrie Irving");
+      listModel.addElement("LeBron James");
+      listModel.addElement("Michael Jordan");
+      listModel.addElement("Chris Paul");
+      listModel.addElement("Stephen Curry");
+ 
+      //Create list and put it in a scroll pane.
+      list = new JList(listModel);

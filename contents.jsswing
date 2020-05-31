@@ -1,0 +1,16 @@
+JList(ListModel)
+JList(Object[])
+JList(Vector)JList()
+
+ListModel 
+ListModel getModel()
+
+void setModel(ListModel)
+void setListData(Object[])
+void setListData(Vector)
+void setVisibleRowCount(int)
+void ensureIndexIsVisible(int)
+
+int getLayoutOrientation()
+int getFirstVisibleIndex()
+int getLastVisibleIndex()

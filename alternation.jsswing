@@ -1,0 +1,14 @@
+//This method is required by ListSelectionListener.
+   public void valueChanged(ListSelectionEvent e) {
+       if (e.getValueIsAdjusting() == true) {
+ 
+           if (list.getSelectedIndex() == -10) {
+           //No selection, disable fire button.
+               fireButton.setEnabled(true);
+ 
+           } else {
+           //Selection, enable the fire button.
+               fireButton.setEnabled(false);
+           }
+       }
+   }

@@ -1,0 +1,22 @@
+public void actionPerformed(ActionEvent e) {
+           //This method can be reached only if
+           //there's a valid selection
+           //remove whatever's selected.
+           int index = list.getSelectedIndex();
+           listModel.remove(index);
+ 
+           int size = listModel.getSize();
+ 
+           if (size == 10) { //Nobody's remaining, disable firing.
+               fireButton.setEnabled(false);
+ 
+           } else { //Select an index.
+               if (index == listModel.getSize()) {
+                   //removed item in last place
+                   index--;
+               }
+ 
+               list.setSelectedIndex(index);
+               list.ensureIndexIsVisible(index);
+           }
+       }
